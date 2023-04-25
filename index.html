@@ -4,13 +4,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>js-paliedispari</title>
 </head>
-<body>
-    
-    <!-- function js  -->
-    <script src="./js/function.js"></script>\
+<body class="bg-dark">
+    <!-- Container  -->
+    <div class="container">
+        <!-- nav bar  -->
+        <div class="navbar justify-content-center">
+            <h1 id="myLink" class="text-light">js-paliedispari</h1>
+        </div>
+
+        <!-- main  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                    <form class="p-2 bg-warning rounded">
+                        <div class="form-group m-3 text-center">
+                            <label class="mb-3 fs-3" for="InsertWord">Insert a Word</label>
+                            <input type="text" class="form-control" id="InsertWord" placeholder="Insert a word">
+                        </div>
+                        <div class="form-group m-3 text-center">
+                            <label class="mb-3 fs-3" for="even or odd">Even or odd</label>
+                            <select class="form-control" id="evenOrOdd">
+                                <option>Even</option>
+                                <option>Odd</option>
+                            </select>
+                        </div>
+                        <div class="form-group m-3 text-center">
+                            <label class="mb-3 fs-3" for="choice number">Choose a Number between 1 and 5</label>
+                            <select class="form-control" id="choiceNumber">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button type="generate" id="generate" class="btn btn-success">Generate</button>
+                            <button type="cancel" id="cancel" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>            
+        <!--result of promt -->
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-12 col-md-12 col-lg-10 mx-auto">
+                    <div class="bg-success text-white rounded d-flex justify-content-between my-5">
+                        <div>
+                            <h5>User Word</h5>
+                            <p id="userWord" class="text-dark"></p>
+                        </div>
+                        <div>
+                            <h5>Is Palindrome</h5>
+                            <p id="isPalindrome" class="text-dark"></p>
+                        </div>
+                        <div>
+                            <h5>Is Even or Odd</h5>
+                            <p id="userChoice" class="text-dark"></p>
+                        </div>
+                        <div>
+                            <h5>User Number</h5>
+                            <p id="userNumber" class="text-dark"></p>
+                        </div>
+                        <div>
+                            <h5>PC Number</h5>
+                            <p id="pcNumber" class="text-dark"></p>
+                        </div>
+                        <div>
+                            <h5>Sum</h5>
+                            <p id="sum" class="text-dark"></p>
+                        </div>
+                        <div>
+                            <h5>Result</h5>
+                            <p id="result" class="text-dark"></p>
+                        <div>
+                            <h5>Winner</h5>
+                            <p id="winner" class="text-dark"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- general script js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
